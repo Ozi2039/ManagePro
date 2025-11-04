@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tasker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="section-panel">
+            <h1>Smart Tasker</h1>
+            <div class="sections-management">
+                <h2>Sections</h2>
+                <div class="add-section">
+                    <input type="text" id="section-input" placeholder="New section name">
+                    <button id="add-section-btn">Add Section</button>
+                </div>
+                <button id="view-all-tasks-btn">View All Tasks</button>
+                <ul id="sections-list"></ul>
+            </div>
+        </div>
+        <div class="task-panel">
+            <h2 id="current-section-title"></h2>
+            <div class="add-task">
+                <input type="text" id="task-input" placeholder="Enter a new task">
+                <input type="date" id="date-input">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
